@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Wanderlust Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Wanderlust Adventures</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <a href="#packages" class="btn-book">Book Now</a>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Explore the World with Wanderlust Adventures</h2>
+            <input type="text" placeholder="Where do you want to go?">
+        </div>
+    </section>
+
+    <!-- Featured Destinations Section -->
+    <section class="destinations" id="destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination">
+                <img src="paris.png" alt="Paris">
+                <p>Paris</p>
+                <p>The romantic "City of Light," known for its art, fashion, and historic landmarks.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination">
+                <img src="maldives.png" alt="Maldives">
+                <p>Maldives</p>
+                <p>A tropical paradise of turquoise waters, white sandy beaches, and luxury resorts.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination">
+                <img src="skardu.png" alt="Skardu">
+                <p>Skardu</p>
+                <p>A breathtaking gem in Pakistan's north, surrounded by majestic mountains and serene lakes.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination">
+                <img src="newyork.png" alt="New York">
+                <p>New York</p>
+                <p>The vibrant city that never sleeps, offering iconic landmarks and endless energy.</p>
+                <button>View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages and Offers Section -->
+    <section class="packages" id="packages">
+        <h2>Special Packages & Offers</h2>
+        <div class="package-grid">
+            <div class="package">
+                <h3>Honeymoon Getaway</h3>
+                <p>$1999</p>
+                <p>A perfect romantic retreat for newlyweds.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package">
+                <h3>Adventure Trails</h3>
+                <p>$1499</p>
+                <p>For the thrill-seekers and adventurers.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package">
+                <h3>Family Trips</h3>
+                <p>$999</p>
+                <p>Fun-filled vacations for the whole family.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="package">
+                <h3>Sibling Trips</h3>
+                <p>$300</p>
+                <p>Fun-filled holidays for the best siblings time.</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <img src="client.png" alt="Client">
+                <p>"The honeymoon package was incredible! We'll cherish it forever!" - Emily & John</p>
+            </div>
+            <div class="testimonial">
+                <img src="client2.png" alt="Client">
+                <p>"Our family trip was an unforgettable experience! Highly recommend!" - The Johnsons</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: www.wanderlistadventures.com</p>
+            <p>Phone: +8 345 123 4567</p>
+            <p>Address: 123 Travel St, Wander City, Canada</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/accounts/login/?hl=en">Instagram</a>
+                <a href="https://www.facebook.com/login.php/">Facebook</a>
+                <a href="https://www.tiktok.com/login">TikTok</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">Terms and Conditions</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Privacy_policy#:~:text=A%20privacy%20policy%20is%20a,a%20customer%20or%20client's%20data.">Privacy Policy</a></li>
+            <li><a href="https://herothemes.com/blog/what-is-a-frequently-asked-questions-page/#:~:text=FAQ%20stands%20for%20Frequently%20Asked,may%20have%20or%20frequently%20ask.">FAQs</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
+
+<style>
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Section */
+header {
+    background-color: #005F6B;
+    padding: 20px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+header .btn-book {
+    background-color: #F07C00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+header .btn-book:hover {
+    background-color: #e06900;
+}
+
+/* Mobile menu styles */
+header .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero input {
+    padding: 15px;
+    width: 300px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.hero input:focus {
+    outline: none;
+    background-color: white;
+}
+
+/* Featured Destinations Section */
+.destinations {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.destination {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination p {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.destination button {
+    background-color: #005F6B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.destination button:hover {
+    background-color: #004c57;
+}
+
+/* Packages and Offers Section */
+.packages {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.packages h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.package {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.package:hover {
+    transform: translateY(-10px);
+}
+
+.package h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.package p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.package button {
+    background-color: #F07C00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.package button:hover {
+    background-color: #e06900;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding-bottom: 25px;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form textarea {
+    height: 150px;
+}
+
+.contact form button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #005F6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #004c57;
+}
+
+.contact-info {
+    padding-top: 25px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #005F6B;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    header nav ul li {
+        margin: 0;
+    }
+
+    header nav ul li a {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+
+    header .burger {
+        display: flex;
+    }
+
+    header.active nav ul {
+        display: flex;
+    }
+}
+
+/* Footer Section */
+footer {
+    padding: 20px 0;
+    background-color: #005F6B;
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+/* Hero Section */
+.hero {
+    background: 
+        url('image.png') no-repeat center center/cover, 
+        rgba(255, 255, 255, -0); 
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+/* Hero Section */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8); 
+}
+
+
+
+
+</style>
+<script>
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('header nav ul');
+
+burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+</script>
