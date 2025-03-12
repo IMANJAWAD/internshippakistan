@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Pakistan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #001f3f;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .hero {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background-color: #17a2b8;
+            color: white;
+            border: none;
+        }
+        .internship-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: white;
+        }
+        footer {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .justified-text {
+            text-align: justify;
+        }
+            .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+    body {
+        padding-top: 40px; 
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo2.png" alt="Internship Pakistan Logo" style="height: 20px; margin-right: 10px;">
+            Internship Pakistan
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#internship-listings">Internships</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item">
+                <a class="btn btn-primary nav-link" href="#featured-internships">Apply</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Internship Pakistan</h1>
+            <p>Explore top internship opportunities and kickstart your career journey with us!</p>
+            <a href="#internship-listings" class="btn btn-lg" id="explore-btn">Explore Internships</a>
+        </div>
+    </section>
+    
+    
+    <!-- Featured Internships Section -->
+<section id="featured-internships" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Internships</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="internship-card">
+                    <h5>Software Engineer Intern</h5>
+                    <p><strong>Company:</strong> Innovatech</p>
+                    <p><strong>Location:</strong> Remote</p>
+                    <p><strong>Duration:</strong> 6 months</p>
+                    <p><strong>Stipend:</strong> $500/month</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="internship-card">
+                    <h5>Marketing Strategist Intern</h5>
+                    <p><strong>Company:</strong> Creative Minds</p>
+                    <p><strong>Location:</strong> Karachi</p>
+                    <p><strong>Duration:</strong> 3 months</p>
+                    <p><strong>Stipend:</strong> PKR 20,000/month</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="internship-card">
+                    <h5>Data Science Intern</h5>
+                    <p><strong>Company:</strong> Data Insights</p>
+                    <p><strong>Location:</strong> Islamabad</p>
+                    <p><strong>Duration:</strong> 4 months</p>
+                    <p><strong>Stipend:</strong> PKR 30,000/month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Internship Listings Page -->
+    <section id="internship-listings" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Internship Listings</h2>
+
+            <!-- Filters -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label for="filter-duration" class="form-label">Filter by Duration</label>
+                    <select id="filter-duration" class="form-select">
+                        <option value="">All</option>
+                        <option value="1">1 month</option>
+                        <option value="2">2 months</option>
+                        <option value="3">3 months</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="filter-type" class="form-label">Filter by Type</label>
+                    <select id="filter-type" class="form-select">
+                        <option value="">All</option>
+                        <option value="remote">Remote</option>
+                        <option value="onsite">Onsite</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="filter-location" class="form-label">Filter by Location</label>
+                    <input type="text" id="filter-location" class="form-control" placeholder="Enter location">
+                </div>
+            </div>
+
+            <!-- Internship Cards -->
+            <div class="row g-3" id="internship-container">
+                <div class="col-md-4 internship-item" data-duration="3" data-type="remote" data-location="Remote">
+                    <div class="internship-card">
+                        <h5>Frontend Developer</h5>
+                        <p>Company: Tech Solutions</p>
+                        <p>Location: Onsite</p>
+                        <p>Duration: 3 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="3" data-type="remote" data-location="Remote">
+                    <div class="internship-card">
+                        <h5>Frontend Developer</h5>
+                        <p>Company: Tech Solutions</p>
+                        <p>Location: Remote</p>
+                        <p>Duration: 3 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="3" data-type="remote" data-location="Remote">
+                    <div class="internship-card">
+                        <h5>Data Miner</h5>
+                        <p>Company: Tech Solutions</p>
+                        <p>Location: Onsite</p>
+                        <p>Duration: 3 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="3" data-type="remote" data-location="Remote">
+                    <div class="internship-card">
+                        <h5>Frontend Developer</h5>
+                        <p>Company: Tech Solutions</p>
+                        <p>Location: Remote</p>
+                        <p>Duration: 3 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="3" data-type="remote" data-location="Remote">
+                    <div class="internship-card">
+                        <h5>Cyber Analyst</h5>
+                        <p>Company: Tech Solutions</p>
+                        <p>Location: Onsite</p>
+                        <p>Duration: 3 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="3" data-type="remote" data-location="Remote">
+                    <div class="internship-card">
+                        <h5>NodeJS Developer</h5>
+                        <p>Company: Tech Solutions</p>
+                        <p>Location: Remote</p>
+                        <p>Duration: 3 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="3" data-type="remote" data-location="Remote">
+                    <div class="internship-card">
+                        <h5>Backend Developer</h5>
+                        <p>Company: Tech Solutions</p>
+                        <p>Location: Onsite</p>
+                        <p>Duration: 3 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="2" data-type="onsite" data-location="Lahore">
+                    <div class="internship-card">
+                        <h5>Marketing Intern</h5>
+                        <p>Company: Creative Minds</p>
+                        <p>Location: Karachi</p>
+                        <p>Duration: 2 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+                <div class="col-md-4 internship-item" data-duration="4" data-type="onsite" data-location="Islamabad">
+                    <div class="internship-card">
+                        <h5>Data Analyst</h5>
+                        <p>Company: Data Insights</p>
+                        <p>Location: Islamabad</p>
+                        <p>Duration: 4 months</p>
+                        <button class="btn btn-primary btn-sm apply-btn">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Testimonials Section -->
+ <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Testimonals</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"Internship Pakistan helped me gain invaluable experience in the tech industry. The team was supportive throughout the journey."</p>
+                    <p class="text-end">- Ali Khan</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"I secured my first job thanks to the internship opportunities I found here. Highly recommend this platform!"</p>
+                    <p class="text-end">- Ayesha Ahmed</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"The internships listed here were diverse and matched my skills perfectly. Great experience!"</p>
+                    <p class="text-end">- Hassan Raza</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+          At <strong>Internship Pakistan</strong>, we are redefining the way students and professionals connect with internship opportunities. 
+          Our platform serves as a bridge between emerging talent and top-tier organizations, fostering growth, skill enhancement, and career success.
+        </p>
+        
+        <h3 style="color: #0056b3; margin-top: 30px;">Our Mission</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #333;">
+          <li><strong>Providing Opportunities:</strong> Connecting students with internships across industries, locally and globally.</li>
+          <li><strong>Building Skills:</strong> Offering resources, training, and guidance to prepare individuals for the job market.</li>
+          <li><strong>Creating Impact:</strong> Driving a culture of innovation, professionalism, and continuous learning.</li>
+        </ul>
+        
+        <h3 style="color: #0056b3; margin-top: 30px;">Our Team</h3>
+        <p style="font-size: 1.1rem; color: #333; margin-bottom: 20px;">
+          Behind Internship Pakistan is a dynamic team of industry experts, educators, and tech enthusiasts passionate about creating opportunities 
+          for the next generation. Our collective expertise ensures we deliver the best internship experiences while empowering students to excel in their careers.
+        </p>
+        
+        <h3 style="color: #0056b3; margin-top: 30px;">A Brief History</h3>
+        <ul style="list-style-type: circle; margin-left: 20px; color: #333;">
+          <li><strong>2021:</strong> Internship Pakistan was founded with a vision to address the lack of structured internship opportunities in Pakistan.</li>
+          <li><strong>2022:</strong> Successfully launched the platform, connecting 1,000+ students with internships nationwide.</li>
+          <li><strong>2023:</strong> Expanded to include remote internships, skill-building workshops, and certification programs.</li>
+          <li><strong>2024:</strong> Partnered with leading organizations and introduced AI-powered tools for personalized internship recommendations.</li>
+        </ul>
+        
+        <p style="font-size: 1.1rem; color: #333; margin-top: 30px;">
+          As we continue to grow, Internship Pakistan remains committed to enabling the youth of Pakistan to thrive in a competitive, globalized workforce. 
+          <strong>Join us</strong> in shaping the future of career development!
+        </p>
+      </section>
+      
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Subject</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your subject">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Internship Pakistan. All Rights Reserved.</p>
+    </footer>
+    <script>
+
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function () {
+  const filterDuration = document.getElementById("filter-duration");
+  const filterType = document.getElementById("filter-type");
+  const filterLocation = document.getElementById("filter-location");
+  const internshipItems = document.querySelectorAll(".internship-item");
+
+  // Function to filter internships
+  function filterInternships() {
+    const durationValue = filterDuration.value.toLowerCase();
+    const typeValue = filterType.value.toLowerCase();
+    const locationValue = filterLocation.value.toLowerCase();
+
+    internshipItems.forEach((item) => {
+      const itemDuration = item.getAttribute("data-duration");
+      const itemType = item.getAttribute("data-type").toLowerCase();
+      const itemLocation = item.getAttribute("data-location").toLowerCase();
+
+      const matchesDuration = durationValue === "" || itemDuration === durationValue;
+      const matchesType = typeValue === "" || itemType === typeValue;
+      const matchesLocation = locationValue === "" || itemLocation.includes(locationValue);
+
+      if (matchesDuration && matchesType && matchesLocation) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  // Attach event listeners to filter inputs
+  filterDuration.addEventListener("change", filterInternships);
+  filterType.addEventListener("change", filterInternships);
+  filterLocation.addEventListener("input", filterInternships);
+});
+
+// Form Validation and Success Message for Send Message Button
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent form submission
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || message === "") {
+    alert("Please fill in all fields before submitting.");
+  } else {
+    document.getElementById("sendMessageButton").innerText = "Message Sent";
+    setTimeout(() => {
+      document.getElementById("sendMessageButton").innerText = "Send Message";
+    }, 3000); // Reset after 3 seconds
+  }
+});
+
+// Get all apply buttons
+document.querySelectorAll(".apply-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    alert("You have successfully applied for this internship!");
+  });
+});
+
+// Get the Send Message button
+const sendMessageButton = document.getElementById("sendMessageButton");
+
+// Add an event listener to the Send Message button
+sendMessageButton.addEventListener("click", function () {
+  // Get the form fields
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // Check if all fields are filled
+  if (name && email && message) {
+    // Show a success alert
+    alert("Your message has successfully been sent!");
+    // Optionally, clear the form fields
+    document.getElementById("contactForm").reset();
+  } else {
+    // Show an error alert if fields are not filled
+    alert("Please fill in all fields before sending.");
+  }
+});
+
+
+
+    </script>
+
+
+<style>
+    /* Button styles */
+#explore-btn {
+    color: white; /* White text */
+    background-color: #007bff; /* Button background */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+#explore-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #f8f9fa; /* Slightly off-white text */
+}
+
+</style>

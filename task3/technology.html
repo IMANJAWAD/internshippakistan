@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - NewsToday</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NewsToday</div>
+            <ul class="nav-links">
+                <li><a href="task3.html">Home</a></li>
+                <li><a href="general.html">General News</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="sports.html">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="news-section">
+        <h2>Technology:</h2>
+        <p>Latest updates in the tech industry.</p>
+        <div class="news-card">
+            <h3>AI Breakthroughs</h3>
+            <p>Dubbed NeuroLogic AI, the system integrates deep learning with neuromorphic computing, enabling it to process data and make complex decisions with unprecedented accuracy. Experts believe this breakthrough will have significant implications for autonomous systems, healthcare diagnostics, financial forecasting, and even creative fields such as art and music generation....</p>
+        </div>
+
+
+        <div class="news-card">
+            <h3>Cryptocrrency scam alert</h3>
+            <p>According to investigators, the scheme, dubbed “CryptoWealth Elite,” operated for over two years, targeting unsuspecting individuals through social media campaigns and influencer endorsements. Victims reported that their initial investments showed promising returns, but withdrawals were eventually blocked, and the company vanished overnight....</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="https://www.instagram.com/accounts/login/">Instagram</a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="Subscribe to Newsletter">
+            <button>Subscribe</button>
+        </div>
+        <p>&copy; 2025 NewsToday. All Rights Reserved.</p>
+    </footer>
+</body>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a0c2dc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    background-color: #43719f;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #082142;
+}
+
+/* Search & Login */
+.search-login {
+    display: flex;
+    align-items: center;
+}
+
+.search-login input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-login button {
+    padding: 8px 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-login button:hover {
+    background-color: #0d5dbd;
+}
+
+/* Hero Section */
+.hero {
+    background: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* News Sections */
+.news-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.03);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+.news-card p {
+    padding: 0 15px 15px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.sidebar-widget {
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #43719f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1a73e8;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #fb1c1c;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background-color: #fc5454;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+.news-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between news-card divs */
+}
+
+.news-card {
+    padding: 20px; /* Adds padding inside each news card */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+</style>
+</html>
