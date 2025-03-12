@@ -1,0 +1,123 @@
+.home-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Featured Hotels Section */
+.featured-hotels {
+  background-color: #ffffff; /* Light blue background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.featured-hotels h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between cards */
+}
+
+.hotel-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.hotel-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.hotel-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Popular Destinations Section */
+.popular-destinations {
+  padding: 20px;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  text-align: center; /* Center the heading */
+}
+
+.popular-destinations h2 {
+  margin-bottom: 20px;
+}
+
+.destination-grid {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  padding-bottom: 10px; /* Add some padding at the bottom */
+}
+
+.destination-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 250px; /* Minimum width for each card */
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.destination-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.destination-card img {
+  width: 100%;
+  height: 150px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.destination-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333; /* Darker text for better contrast */
+}

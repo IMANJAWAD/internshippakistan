@@ -1,0 +1,16 @@
+.hotel-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .hotel-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
